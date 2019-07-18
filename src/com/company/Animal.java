@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Animal {
+public abstract class Animal implements IAnimal {
 
  private int weight;
  private int age;
@@ -30,7 +30,8 @@ public abstract class Animal {
  public void setColor(String color) {
   this.color = color;
  }
- protected abstract String go();
+
+
 
  protected abstract String getName();
 
@@ -42,6 +43,6 @@ public abstract class Animal {
           "weight=" + weight +
           ", age=" + age +
           ", color='" + color + '\'' +
-          '}'+go() ;
+          '}'+go() +"   "+eat();
  }
 }

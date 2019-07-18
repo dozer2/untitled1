@@ -1,12 +1,12 @@
 package com.company;
 
-public class Cat extends RunningAnimal {
+public class Cat extends Animal {
 
     public Cat(int age , int weight,String color,boolean mustage ) {
         setAge(age);
         setWeight(weight);
         setColor(color);
-        setMustage(mustage);
+
     }
 
     @Override
@@ -19,7 +19,9 @@ public class Cat extends RunningAnimal {
     }
 
     @Override
-    protected String isRunning() {
-        return "i am running";
+    public String eat() {
+        return "mouse";
     }
+
+
 }

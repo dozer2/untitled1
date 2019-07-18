@@ -1,11 +1,11 @@
 package com.company;
 
-public class Snake extends RunningAnimal {
+public class Snake extends Animal {
     public Snake(int age , int weight, String color,boolean mustage) {
         setAge(age);
         setWeight(weight);
         setColor(color);
-        setMustage(mustage);
+
     }
 
     @Override
@@ -14,12 +14,14 @@ public class Snake extends RunningAnimal {
     }
 
     @Override
+    public String eat() {
+        return "eggs";
+    }
+
+    @Override
     public String getName() {
         return "Snake";
     }
 
-    @Override
-    protected String isRunning() {
-        return "is hissing";
-    }
+
 }
